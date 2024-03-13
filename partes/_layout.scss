@@ -1,0 +1,205 @@
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+// BG HOME
+
+.bg-home{
+    position: relative;
+
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("./fotos/CABELELEIRA.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+
+// ------------------------FINALIZADOOOOOOOOOOOOOOOOOOOOOOOOO----------------------------------------
+// HERO
+
+.hero{
+    color: $white-normal;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 45px;
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+.button-contact{
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-normal;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+
+        h1{
+            font-size: 32px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+
+}
+// FINAL DO HERO UHULLLLLLLLLLL FALTA SO O RESTO
+
+//ABOUT
+
+.about{
+    background-color: $primary_normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 14;
+   padding: 34px 14px 64px 14px;
+
+    img{
+        max-width: 550px;
+    }
+} 
+
+.about-content div{
+    flex: 1;
+}
+
+.about-description{
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+// ABOUT FINALIZADOOO F NO CHAT
+
+//serviços
+
+.services{
+    background-color: white;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 54px 14px;
+
+}
+
+.services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 14px;
+
+}
+
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 760px;
+}
+
+.CORTE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 34px 34px 34px;
+
+}
+
+.haircut{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px #000;
+
+    overflow: hidden;
+    
+}
+
+img{
+    width: 100%;
+    max-width: 350px;
+    transition: transform (0.2s);
+
+}
+
+.haircut img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.informação{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+.informação button{
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+}
+
+@media screen and (max-width: 760px){
+    .CORTE{
+     flex-direction: column;
+    }
+}
+
